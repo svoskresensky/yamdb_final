@@ -29,7 +29,7 @@ class UserSerializer(serializers.ModelSerializer):
         if (user.role == user.USER and not user.is_superuser):
             value = user.USER
             return value
-
+        return value
 
 class TokenObtainSerializer(serializers.Serializer):
     username = serializers.CharField()
