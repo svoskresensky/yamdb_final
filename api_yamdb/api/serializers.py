@@ -31,6 +31,7 @@ class UserSerializer(serializers.ModelSerializer):
             return value
         return value
 
+
 class TokenObtainSerializer(serializers.Serializer):
     username = serializers.CharField()
     confirmation_code = serializers.CharField()
