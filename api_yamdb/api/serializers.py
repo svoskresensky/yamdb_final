@@ -25,11 +25,10 @@ class UserSerializer(serializers.ModelSerializer):
         return value
 
     def validate_role(self, value):
-        res = value
         user = self.context['request'].user
         if (user.role == user.USER and not user.is_superuser):
-            res = user.USER
-        return res
+            value = user.USER
+            return value
 
 
 class TokenObtainSerializer(serializers.Serializer):
