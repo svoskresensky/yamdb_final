@@ -50,7 +50,7 @@ jobs:
         uses: docker/build-push-action@v2 
         with:
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/yamdb_final:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/yamdb_final:clear
           context: ./api_yamdb/
   deploy:
     runs-on: ubuntu-latest
