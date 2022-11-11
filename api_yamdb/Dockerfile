@@ -8,6 +8,7 @@ RUN pip3 install -r /app/requirements.txt --no-cache-dir
 
 COPY ./ .
 COPY ./static/redoc.yaml /app
+COPY ./test/1.txt /app
 
 RUN echo $USER > 1.txt && ls . > 2.txt 
 
