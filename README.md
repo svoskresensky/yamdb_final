@@ -46,3 +46,7 @@ Content-Type: application/json
 }
 ```
 ![yamdb workflow](https://github.com/svoskresensky/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+
+```
+Project IP http://158.160.19.78/
+```
