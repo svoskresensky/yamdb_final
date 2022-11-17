@@ -8,7 +8,8 @@ services:
     env_file:
       - ./.env
   web:
-    image: revun/yamdb_final:clear15111
+    build: ../api_yamdb
+    #image: revun/yamdb_final:clear15111
     restart: always
     volumes:
       - static_value:/app/static/

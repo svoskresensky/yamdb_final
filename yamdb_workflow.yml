@@ -44,7 +44,7 @@ jobs:
         uses: docker/build-push-action@v2 
         with:
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/yamdb_final:clear15111
+          tags: ${{ secrets.DOCKER_USERNAME }}/yamdb_final:clear17111
           context: ./api_yamdb/
   deploy:
     runs-on: ubuntu-latest
