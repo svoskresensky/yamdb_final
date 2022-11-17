@@ -12,7 +12,7 @@ services:
     #image: revun/yamdb_final:clear15111
     restart: always
     volumes:
-      - static_value:/app/staticfiles/
+      - static_value:/app/Static/
       - media_value:/app/media/
     depends_on:
       - db
@@ -27,7 +27,7 @@ services:
 
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
-      - static_value:/var/html/staticfiles/
+      - static_value:/var/html/Static/
       - media_value:/var/html/media/
 
     depends_on:
